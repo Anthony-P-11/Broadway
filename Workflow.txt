@@ -1,0 +1,234 @@
+
+Anthony@Anthony MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ excursion/
+ Favorites/
+ git_practice/
+ Heaven/
+ Intel/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{282212c4-8428-11e7-8b38-cbbb572c71a0}.TM.blf
+ NTUSER.DAT{282212c4-8428-11e7-8b38-cbbb572c71a0}.TMContainer0000000000000000000                                                                                                   1.regtrans-ms
+ NTUSER.DAT{282212c4-8428-11e7-8b38-cbbb572c71a0}.TMContainer0000000000000000000                                                                                                   2.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+ resources/
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+Anthony@Anthony MINGW64 ~
+$ pwd
+/c/Users/Anthony
+
+Anthony@Anthony MINGW64 ~
+$ cd desktop
+
+Anthony@Anthony MINGW64 ~/desktop
+$ mkdir Broadway Project
+
+Anthony@Anthony MINGW64 ~/desktop
+$ cd Broadway
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ mkdir resources
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ mkdir images
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ touch index.html
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ cd resources
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway/resources
+$ touch style.css
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway/resources
+$ cd ..
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ pwd
+/c/Users/Anthony/desktop/Broadway
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway
+$ git init
+Initialized empty Git repository in C:/Users/Anthony/Desktop/Broadway/.git/
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+        resources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git add index.html
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git add resources
+warning: LF will be replaced by CRLF in resources/images/execute.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in resources/images/identify.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in resources/images/understand.svg.
+The file will have its original line endings in your working directory.
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git config --global core.autocrlf true
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git add resources
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+        new file:   resources/images/execute.svg
+        new file:   resources/images/identify.svg
+        new file:   resources/images/the-flatiron-building.png
+        new file:   resources/images/understand.svg
+        new file:   resources/style.css
+
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git commit -m "Complete HTML and CSS."
+[master (root-commit) 3508f45] Complete HTML and CSS.
+ 6 files changed, 140 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 resources/images/execute.svg
+ create mode 100644 resources/images/identify.svg
+ create mode 100644 resources/images/the-flatiron-building.png
+ create mode 100644 resources/images/understand.svg
+ create mode 100644 resources/style.css
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git remote add origin https://github.com/Anthony-P-11/Broadway.git
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git push -u origin master 7a5e7cfeec239a4919b4305403c2422486a104dc
+fatal: 7a5e7cfeec239a4919b4305403c2422486a104dc cannot be resolved to branch.
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git remote add origin https://github.com/Anthony-P-11/Broadway.git
+fatal: remote origin already exists.
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git push origin -u master
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 699.41 KiB | 26.90 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/Anthony-P-11/Broadway.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ touch README.txt
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ touch Git Workflow.txt
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git add README.txt
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Workflow.txt
+
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git commit -m "README file describing process."
+[master 59b6ab3] README file describing process.
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.txt
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ git push origin -u master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 618 bytes | 618.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Anthony-P-11/Broadway.git
+   3508f45..59b6ab3  master -> master
+Branch master set up to track remote branch master from origin.
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$ pwd
+/c/Users/Anthony/desktop/Broadway
+
+Anthony@Anthony MINGW64 ~/desktop/Broadway (master)
+$
